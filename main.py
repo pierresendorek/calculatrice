@@ -1,6 +1,6 @@
 import sys
 from addition import add
-from division import div
+from division import div0
 
 sys_argv = sys.argv[1:]
 a, op, b = sys_argv
@@ -12,7 +12,7 @@ if op == 'add':
     op_function = add
 elif op == 'div':
     print('affect div')
-    op_function = div
+    op_function = div0
 
 
 print("result = " , op_function(a,b))
